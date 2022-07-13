@@ -92,14 +92,14 @@ let trs = [
 document.write(`
     <table>
 		<thead>
-        <tr>
-            <th>Image</th>
-            <th>Name</th>
-            <th>Price</th>
-        </tr>
+			<tr>
+				<th>Image</th>
+				<th>Name</th>
+				<th>Price</th>
+			</tr>
 		</thead>
 		<tbody>
-        ${trs}
+        	${trs}
 		</tbody>
     </table>
 `);

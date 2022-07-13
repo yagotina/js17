@@ -86,16 +86,21 @@ let trs = [
     if(Array.isArray(product.price)) product.price = product.price.join('-');
     return product;
 })
-.map(product => product.render());  
+.map(product => product.render())
+.join('');
 
 document.write(`
     <table>
+		<thead>
         <tr>
             <th>Image</th>
             <th>Name</th>
             <th>Price</th>
         </tr>
+		</thead>
+		<tbody>
         ${trs}
+		</tbody>
     </table>
 `);
 
